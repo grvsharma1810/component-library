@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/alert.css");
+
+:root{
+  --primary-color: #D63D41;
+  --secondary-color: #F2F0EE;
+  --text-primary-color: white;
+  --text-secondary-color: #374151;
+  --success : #16A34A;
+  --failure : #991B1B;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}

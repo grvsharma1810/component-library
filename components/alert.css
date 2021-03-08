@@ -1,0 +1,15 @@
+.alert{
+    padding: 15px;
+    margin-bottom: 20px;    
+    border-radius: 4px;
+}
+
+.alert-success{
+    color: white;
+    background-color: var(--success);    
+}
+
+.alert-failure{
+    color: white;
+    background-color: var(--failure);
+}
