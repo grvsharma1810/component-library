@@ -1,0 +1,14 @@
+.badged-avatar, .badged-icon{
+    position : relative;
+}
+
+.badge{
+    position : absolute;
+    background-color: var(--primary-background-color);
+    border-radius: 100%;
+    top: -2px;
+    right: -2px;
+    color: white;
+    padding: var(--space-0);
+    font-size: var(--size-1);
+}

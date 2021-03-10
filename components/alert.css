@@ -1,15 +1,15 @@
 .alert{
-    padding: 15px;
-    margin-bottom: 20px;    
+    padding: var(--space-2);
+    margin-bottom: var(--space-2);    
     border-radius: 4px;
 }
 
 .alert-success{
     color: white;
-    background-color: var(--success);    
+    background-color: var(--success-color);    
 }
 
 .alert-failure{
     color: white;
-    background-color: var(--failure);
+    background-color: var(--failure-color);
 }
