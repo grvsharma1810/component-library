@@ -2,21 +2,24 @@
     display:flex;
     flex-wrap: wrap;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:space-between;  
+    width:100%;  
+    gap: var(--space-2);
 }
 
 .form-row{
     display:flex;
     flex-wrap: wrap;
+    gap: var(--space-2);
+    /* display:grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: var; */
 }
 
-.form-field {           
-    margin-bottom: var(--space-0);  
-    margin-left: var(--space-0);
-    margin-right: var(--space-0);
-    flex:1 1 auto;
-        
+.form-field {               
+    flex:1 1 auto;        
 }
+
 .form-field > label {    
     display:block;
     margin-bottom:var(--space-0);
@@ -36,6 +39,17 @@
     transition: box-shadow 0.2s linear;
 }
 
+/* input[data-error]{
+    border-color: red;
+    color:red;
+    background-color:lightcoral;
+}
+
+input[data-error]::after{
+    content: attr(data-error);
+    font-size:0.85rem;
+    width: 100%;
+} */
 
 input:focus::-webkit-input-placeholder {
     color: #404040;

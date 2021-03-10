@@ -210,11 +210,15 @@
 
     <div>
         <h2>Input</h2>
-        <div class="form">
+        <form class="form">
             <div class="form-row">
                 <p class="form-field">
                     <label for="first_name">First Name</label>
-                    <input id="first_name" type="text" placeholder="First name">                
+                    <input data-error="Please enter valid name" id="first_name" type="text" placeholder="First name">
+                </p> 
+                <p class="form-field">
+                    <label for="middle_name">Middle Name</label>
+                    <input id="middle_name" type="text" placeholder="Middle name">                
                 </p> 
                 <p class="form-field">
                     <label for="last_name">Last Name</label>
@@ -230,9 +234,14 @@
                     <label for="Comments">Comments</label>
                     <textarea id="Comments" placeholder="Comments"></textarea>
                 </p>
-            </div>                
-        </div>          
+            </div>  
+            <div class="form-row">
+                <button class="btn-primary">Submit</button>
+                <button class="btn-secondary">Submit</button>
+            </form>                        
+        </form>          
     </div>
 
+    <script src="index.js"></script>
 </body>
 </html>
