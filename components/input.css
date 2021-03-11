@@ -15,7 +15,7 @@
 }
 
 .form-row > * {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-3);
 }
 
 .form-field {               
