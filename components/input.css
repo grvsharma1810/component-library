@@ -25,18 +25,26 @@
     margin-bottom:var(--space-0);
 }
 
-.form-field >  input, .form-field > textarea{    
+.form-field >  input, .form-field > textarea, .form-field > select{    
     width: 100%;
     padding: var(--space-1);
     border: 1px solid var(--secondary-background-color);
-    outline:none;
+    outline:none;    
 }
 
-.form-field >  input:focus, .form-field > textarea:focus{    
+.form-field >  input:focus, .form-field > textarea:focus, .form-field > select:focus{    
     width: 100%;
     padding: var(--space-1);
     box-shadow: 0px 0px 2px 2px var(--secondary-background-color);
     transition: box-shadow 0.2s linear;
+}
+
+.error-msg{    
+    display:none;    
+}
+
+.success-msg{    
+    display:none;    
 }
 
 /* input[data-error]{
