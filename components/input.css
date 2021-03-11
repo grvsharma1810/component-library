@@ -2,22 +2,21 @@
     display:flex;
     flex-wrap: wrap;
     flex-direction:column;
-    justify-content:space-between;  
-    width:100%;  
-    gap: var(--space-4)  var(--space-2);
+    /* justify-content:space-between;   */
+    width:100%;      
 }
 
 .form-row{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: var(--space-4)  var(--space-2);    
+    gap: 0px  var(--space-2);    
 }
 
-/* .form-row > p {
+.form-row > * {
     margin-top: var(--space-1);
     margin-bottom: var(--space-1);
-} */
+}
 
 .form-field {               
     flex:1 1 auto;        
