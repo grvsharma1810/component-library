@@ -11,11 +11,14 @@
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: var(--space-2);
-    /* display:grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: var; */
+    gap: var(--space-2)  var(--space-2);
+    margin-bottom: var(--space-2);
 }
+
+/* .form-row > p {
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-1);
+} */
 
 .form-field {               
     flex:1 1 auto;        
@@ -26,10 +29,14 @@
     margin-bottom:var(--space-0);
 }
 
-input[checkbox] > label {    
-    /* display:block; */
+/* .form-field > input[type="checkbox"] + label {
+    background-color: red;    
+    display: inline;
     margin-bottom:var(--space-0);
 }
+input[type="checkbox"]{
+    display: inline;
+} */
 
 .form-field >  input, .form-field > textarea, .form-field > select{    
     width: 100%;
@@ -45,30 +52,16 @@ input[checkbox] > label {
     transition: box-shadow 0.2s linear;
 }
 
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #404040;
+}
+
+
+
 .error-msg{    
     display:none;    
 }
 
 .success-msg{    
     display:none;    
-}
-
-/* input[data-error]{
-    border-color: red;
-    color:red;
-    background-color:lightcoral;
-}
-
-input[data-error]::after{
-    content: attr(data-error);
-    font-size:0.85rem;
-    width: 100%;
-} */
-
-input:focus::-webkit-input-placeholder {
-    color: #404040;
-}
-
-textarea:focus::-webkit-input-placeholder {
-    color: #404040;
 }
