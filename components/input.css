@@ -14,8 +14,8 @@
 }
 
 .form-row > * {
-    margin-top: var(--space-1);
-    margin-bottom: var(--space-1);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-4);
 }
 
 .form-field {               
