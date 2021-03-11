@@ -2,9 +2,10 @@ document.querySelectorAll('.do-validation').forEach(forms => {
     forms.addEventListener('submit',function(event) {
         event.preventDefault();
         event.stopPropagation();
-        let formFields = event.target;
-        console.log(formFields);
-        // formFields.forEach()
+        let formFields = event.target.querySelectorAll("form input, form textarea, form select");        
+        formFields.forEach(formField => {
+            console.log(formField.value);
+        })
     })
     // inpEl.addEventListener('input', () => {
     //     console.log("Hi");
