@@ -15,7 +15,7 @@
 }
 
 .form-row > * {
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-3);   /* margin for each field inside form */
 }
 
 .form-field {               
