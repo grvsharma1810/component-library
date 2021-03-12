@@ -9,12 +9,12 @@
 .form-row{
     display:flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     justify-content:space-between;
-    column-gap: var(--space-2);    
+    column-gap: var(--space-1);    
 }
 
-.form-row > * {
+.form-row > .form-field, .form-row > .form-check{
     margin-bottom: var(--space-3);   /* margin for each field inside form */
 }
 
@@ -54,12 +54,47 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
     color: #404040;
 }
 
-
-
 .error-msg{    
-    display:none;    
+    display:none;   
+    color: var(--failure-color) ;
 }
 
 .success-msg{    
     display:none;    
+    color: var(--success-color) ;
+}
+
+
+.was-validated :valid ~ .success-msg{
+    display: block;
+}
+
+.was-validated .form-field > input:valid,
+.was-validated .form-field > textarea:valid,
+.was-validated .form-field > select:valid{
+    border: 1px solid var(--success-color);
+}
+
+.was-validated .form-field > input:valid:focus,
+.was-validated .form-field > textarea:valid:focus,
+.was-validated .form-field > select:valid:focus{
+    box-shadow: 0px 0px 2px 2px var(--success-color);
+    transition: box-shadow 0.2s linear;
+}
+
+.was-validated :invalid ~ .error-msg{
+    display: block;
+}
+
+.was-validated .form-field > input:invalid,
+.was-validated .form-field > textarea:invalid,
+.was-validated .form-field > select:invalid{
+    border: 1px solid var(--failure-color);
+}
+
+.was-validated .form-field > input:invalid:focus,
+.was-validated .form-field > textarea:invalid:focus,
+.was-validated .form-field > select:invalid:focus{
+    box-shadow: 0px 0px 2px 2px var(--failure-color);
+    transition: box-shadow 0.2s linear;
 }

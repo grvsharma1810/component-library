@@ -8,6 +8,7 @@
 @import url("components/cards.css");
 @import url("components/image.css");
 @import url("components/input.css");
+@import url("components/lists.css");
 
 :root{
   font-size: 16px;
