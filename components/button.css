@@ -1,71 +1,73 @@
-.link-primary{
-    display:inline-block;
+.link-primary {
+    display: inline-block;
     background-color: var(--primary-background-color);
     color: var(--text-primary-color);
     padding: var(--space-1) var(--space-2);
-    text-decoration: none;  
-    font-size: var(--size-2);  
+    text-decoration: none;
+    font-size: var(--size-2);
     border: 2px solid var(--primary-background-color);
 }
 
-.link-secondary{
-    display:inline-block;
+.link-secondary {
+    display: inline-block;
     background-color: var(--secondary-background-color);
     color: var(--primary-background-color);
     padding: var(--space-1) var(--space-2);
-    text-decoration: none;  
-    font-size: var(--size-2);  
+    text-decoration: none;
+    font-size: var(--size-2);
     border: 2px solid var(--primary-background-color);
 }
 
-.btn-primary{
-    display:inline-block;
+.btn-primary {
+    display: inline-block;
     background-color: var(--primary-background-color);
     color: var(--text-primary-color);
     padding: var(--space-1) var(--space-2);
     border: 0px;
     cursor: pointer;
-    font-size: var(--size-2);   
-    border: 2px solid var(--primary-background-color);    
-    outline:none; 
+    font-size: var(--size-2);
+    border: 2px solid var(--primary-background-color);
+    outline: none;
 }
 
 
-.btn-secondary{
-    outline:none;
-    display:inline-block;
+.btn-secondary {
+    outline: none;
+    display: inline-block;
     background-color: var(--secondary-background-color);
     color: var(--primary-background-color);
     padding: var(--space-1) var(--space-2);
     border: 0px;
     cursor: pointer;
-    font-size: var(--size-2);   
-    border: 2px solid var(--primary-background-color);     
+    font-size: var(--size-2);
+    border: 2px solid var(--primary-background-color);
 }
 
-.btn-floating-action{
+.btn-floating-action {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     padding: var(--space-2);
     background-color: var(--primary-background-color);
     color: var(--text-primary-color);
     border-radius: 100%;
-    outline:none;
-    border: 2px solid var(--primary-background-color);     
+    outline: none;
+    border: 2px solid var(--primary-background-color);
     cursor: pointer;
-    font-size: var(--size-5);   
+    font-size: var(--size-5);
 }
 
-.btn-primary:hover, .link-primary:hover{
+.btn-primary:hover,
+.link-primary:hover {
     background-color: var(--hover-color);
 }
 
-.link-secondary:hover, .btn-secondary:hover{    
-    background-color: var(--primary-background-color);
+.link-secondary:hover,
+.btn-secondary:hover {
+    background-color: var(--hover-color);
     color: var(--text-primary-color);
 }
 
-.btn-floating-action:hover{
+.btn-floating-action:hover {
     box-shadow: 0px 0px 10px 2px var(--primary-background-color);
 }

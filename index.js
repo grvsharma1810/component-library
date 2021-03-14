@@ -21,3 +21,12 @@ document.querySelector('.toggle').addEventListener('click',function(event) {
         }
     })
 })
+
+
+// document.querySelector('.launch-modal').addEventListener('click',function(event) {
+//     document.querySelector('.modal-bg').classList.add('modal-active')    
+// })
+
+// document.querySelector('.modal-bg .btn-dismiss').addEventListener('click',function(event) {
+//     document.querySelector('.modal-bg').classList.remove('modal-active')
+// })

@@ -1,20 +1,20 @@
-.card{
+.card {
     position: relative;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--primary-background-color);
     border-radius: 0.25rem;
-    text-align: center;          
+    text-align: center;
 }
 
-.card-img{
+.card-img {
     width: 100%;
     height: auto;
     border-bottom-right-radius: calc(0.25rem - 1px);
     border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
-.card-body{
+.card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
     display: flex;
@@ -30,20 +30,18 @@
     margin-bottom: 0.75rem;
 }
 
-.card > .card-badge{
-    z-index: 1;
+.card>.card-badge {
     position: absolute;
     content: 'Discount 50%';
-    background: #0F172A; 
+    background: #0F172A;
     color: white;
-    padding:0.25rem 0.5rem;       
-    top:var(--space-2);
-    left:0;
+    padding: 0.25rem 0.5rem;
+    top: var(--space-2);
+    left: 0;
 }
 
-.card > .btn-dismiss{    
-    z-index: 2;
-    position : absolute;
+.card>.btn-dismiss {
+    position: absolute;
     background-color: var(--cool-gray-color);
     border-radius: 50%;
     top: var(--space-2);
@@ -52,9 +50,8 @@
     padding: var(--space-0) var(--space-1);
     font-size: var(--size-2);
     font-weight: 700;
-    cursor:pointer;
+    cursor: pointer;
 }
-
 
 
 .card-img-overlay {

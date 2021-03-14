@@ -1,0 +1,38 @@
+.rating-wrapper {
+    direction: rtl;
+    text-align: center;
+}
+
+.rating-wrapper input {
+    display: none;
+}
+
+.rating-wrapper label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.rating-wrapper label:before {
+    content: "\2605";
+    font-size: var(--size-8);
+    display: inline-block;
+    /* color: gray; */
+}
+
+.rating-wrapper label:after {
+    content: "\2605";
+    position: absolute;
+    font-size: var(--size-8);
+    display: inline-block;
+    top: 0;
+    left: 0;
+    color: gold;
+    opacity: 0;
+}
+
+.rating-wrapper label:hover:after,
+.rating-wrapper label:hover~label:after,
+.rating-wrapper input:checked~label:after {
+    opacity: 1;
+}
