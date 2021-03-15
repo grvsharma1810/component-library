@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url("container.css");
 @import url("utilities/grid-utility.css");
+@import url("utilities/text-utility.css");
 @import url("components/avatar.css");
 @import url("components/alert.css");
 @import url("components/badge.css");
@@ -13,24 +14,53 @@
 @import url("components/navigation.css");
 @import url("components/modal.css");
 @import url("components/start-rating.css");
+@import url("components/toast.css");
 
 :root {
   font-size: 16px;
   --font-family: 'Open Sans', sans-serif;
 
   /* Colors */
-  --primary-background-color: #030102;
-  --secondary-background-color: #FBBF24;
+  /* --background-primary-color: #030102;  
+  --background-secondary-color: #FBBF24;
 
   --text-primary-color: #FBBF24;
-  --text-secondary-color: #030102;
+  --text-secondary-color: #030102; */
 
-  --hover-color: #171717;
+  /* --background-primary-color: #DC2626;
+  --background-secondary-color: #FECACA;
+
+  --text-primary-color: white;
+  --text-secondary-color: #B91C1C; */
+
+  /* --background-primary-color: #059669;
+  --background-secondary-color: #A7F3D0;
+
+  --text-primary-color: white;
+  --text-secondary-color: #047857; */
+
+  /* --background-primary-color: #D97706;
+  --background-secondary-color: #FDE68A;
+
+  --text-primary-color: white;
+  --text-secondary-color: #B45309; */
+
+  --background-primary-color: #2563EB;
+  --text-primary-color: white;
+  --background-primary-hover-color: #1E40AF;
+
+  --background-secondary-color: #EFF6FF;
+  --text-secondary-color: #1D4ED8;
+  --background-secondary-hover-color: #DBEAFE;
+
   --success-color: #16A34A;
   --failure-color: #DC2626;
   --dark-background-color: #181818;
 
-  --cool-gray-color: #F3F4F6;
+  --light-gray-color: #F4F4F5;
+  --dark-gray-color: #3F3F46;
+  --green-color: #22C55E;
+  --dark-green-color: #16A34A;
 
   /* Spacing */
   --space-0: 0.25rem;

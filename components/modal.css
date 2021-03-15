@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: var(--size-1) var(--size-1); */
     visibility: hidden;
     opacity: 0;
     transition: visibility 1s, opacity 0.5s;
@@ -39,7 +38,7 @@
 
 .modal>.btn-dismiss {
     position: absolute;
-    background-color: var(--cool-gray-color);
+    background-color: var(--light-gray-color);
     border-radius: 50%;
     top: var(--space-2);
     right: var(--space-2);

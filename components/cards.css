@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--primary-background-color);
+    border: 1px solid var(--background-primary-color);
     border-radius: 0.25rem;
     text-align: center;
 }
@@ -10,8 +10,7 @@
 .card-img {
     width: 100%;
     height: auto;
-    border-bottom-right-radius: calc(0.25rem - 1px);
-    border-bottom-left-radius: calc(0.25rem - 1px);
+    border-radius: calc(0.25rem - 1px);
 }
 
 .card-body {
@@ -42,7 +41,7 @@
 
 .card>.btn-dismiss {
     position: absolute;
-    background-color: var(--cool-gray-color);
+    background-color: var(--light-gray-color);
     border-radius: 50%;
     top: var(--space-2);
     right: var(--space-2);

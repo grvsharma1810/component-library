@@ -10,23 +10,18 @@ document.querySelectorAll('.needs-validation').forEach(form => {
 
 })
 
-document.querySelector('.toggle').addEventListener('click',function(event) {
-    document.querySelectorAll('nav .item').forEach(navItem => {   
-        console.log(navItem.classList)     ;
-        if(navItem.classList.contains('active')){
-            navItem.classList.remove('active');
-        }
-        else{
-            navItem.classList.add('active');
-        }
-    })
+document.querySelector('.navbar .toggle').addEventListener('click',function(event) {
+    const navLinks = document.querySelector('.navbar .nav-links');    
+    if(navLinks.classList.contains('active')){
+        navLinks.classList.remove('active');
+    }
+    else{
+        navLinks.classList.add('active');
+    }
 })
 
-
-// document.querySelector('.launch-modal').addEventListener('click',function(event) {
-//     document.querySelector('.modal-bg').classList.add('modal-active')    
-// })
-
-// document.querySelector('.modal-bg .btn-dismiss').addEventListener('click',function(event) {
-//     document.querySelector('.modal-bg').classList.remove('modal-active')
-// })
+function showSnackbar() {    
+    var x = document.getElementById("snackbar");      
+    x.className = "show";    
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }

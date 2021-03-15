@@ -1,30 +1,32 @@
-.form{
-    display:flex;
+.form {
+    display: flex;
     flex-wrap: wrap;
-    flex-direction:column;
+    flex-direction: column;
     /* justify-content:space-between;   */
-    width:100%;      
+    width: 100%;
 }
 
-.form-row{
-    display:flex;
+.form-row {
+    display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content:space-between;
-    column-gap: var(--space-1);    
+    justify-content: space-between;
+    column-gap: var(--space-1);
 }
 
-.form-row > .form-field, .form-row > .form-check{
-    margin-bottom: var(--space-3);   /* margin for each field inside form */
+.form-row>.form-field,
+.form-row>.form-check {
+    margin-bottom: var(--space-3);
+    /* margin for each field inside form */
 }
 
-.form-field {               
-    flex:1 1 auto;        
+.form-field {
+    flex: 1 1 auto;
 }
 
-.form-field > label {    
-    display:block;
-    margin-bottom:var(--space-0);
+.form-field>label {
+    display: block;
+    margin-bottom: var(--space-0);
 }
 
 /* .form-field > input[type="checkbox"] + label {
@@ -36,65 +38,85 @@ input[type="checkbox"]{
     display: inline;
 } */
 
-.form-field >  input, .form-field > textarea, .form-field > select{    
+.form-field>input,
+.form-field>textarea,
+.form-field>select {
     width: 100%;
     padding: var(--space-1);
-    border: 1px solid var(--secondary-background-color);
-    outline:none;    
+    border: 1px solid var(--background-primary-color);
+    outline: none;
 }
 
-.form-field >  input:focus, .form-field > textarea:focus, .form-field > select:focus{    
+.form-field>input:focus,
+.form-field>textarea:focus,
+.form-field>select:focus {
     width: 100%;
     padding: var(--space-1);
-    box-shadow: 0px 0px 2px 2px var(--secondary-background-color);
+    box-shadow: 0px 0px 2px 2px var(--background-primary-color);
     transition: box-shadow 0.2s linear;
 }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
     color: #404040;
 }
 
-.error-msg{    
-    display:none;   
-    color: var(--failure-color) ;
+.error-msg {
+    display: none;
+    color: var(--failure-color);
 }
 
-.success-msg{    
-    display:none;    
-    color: var(--success-color) ;
+.success-msg {
+    display: none;
+    color: var(--success-color);
 }
 
 
-.was-validated :valid ~ .success-msg{
+.was-validated :valid~.success-msg {
     display: block;
 }
 
-.was-validated .form-field > input:valid,
-.was-validated .form-field > textarea:valid,
-.was-validated .form-field > select:valid{
+.was-validated .form-field>input:valid,
+.was-validated .form-field>textarea:valid,
+.was-validated .form-field>select:valid {
     border: 1px solid var(--success-color);
 }
 
-.was-validated .form-field > input:valid:focus,
-.was-validated .form-field > textarea:valid:focus,
-.was-validated .form-field > select:valid:focus{
+.was-validated .form-field>input:valid:focus,
+.was-validated .form-field>textarea:valid:focus,
+.was-validated .form-field>select:valid:focus {
     box-shadow: 0px 0px 2px 2px var(--success-color);
     transition: box-shadow 0.2s linear;
 }
 
-.was-validated :invalid ~ .error-msg{
+.was-validated :invalid~.error-msg {
     display: block;
 }
 
-.was-validated .form-field > input:invalid,
-.was-validated .form-field > textarea:invalid,
-.was-validated .form-field > select:invalid{
+.was-validated .form-field>input:invalid,
+.was-validated .form-field>textarea:invalid,
+.was-validated .form-field>select:invalid {
     border: 1px solid var(--failure-color);
 }
 
-.was-validated .form-field > input:invalid:focus,
-.was-validated .form-field > textarea:invalid:focus,
-.was-validated .form-field > select:invalid:focus{
+.was-validated .form-field>input:invalid:focus,
+.was-validated .form-field>textarea:invalid:focus,
+.was-validated .form-field>select:invalid:focus {
     box-shadow: 0px 0px 2px 2px var(--failure-color);
     transition: box-shadow 0.2s linear;
 }
+
+/* 
+.input-field>input {
+    width: 100%;
+    padding: var(--space-1);
+    box-shadow: 0px 0px 2px 2px var(--background-primary-color);
+    transition: box-shadow 0.2s linear;
+}
+
+.input-field>input:focus {
+    width: 100%;
+    padding: var(--space-1);
+    box-shadow: 0px 0px 2px 2px var(--background-primary-color);
+    transition: box-shadow 0.2s linear;
+} */
