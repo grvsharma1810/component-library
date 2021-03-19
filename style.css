@@ -4,22 +4,22 @@
     font-size: 16px;
     --font-family: 'Open Sans', sans-serif;
 
-    --background-primary-color: #2563EB;
-    --text-primary-color: white;
-    --background-primary-hover-color: #1E40AF;
+    --blue-600-color: #2563EB;
+    --white-color: white;
+    --blue-800-color: #1E40AF;
 
-    --background-secondary-color: #EFF6FF;
-    --text-secondary-color: #1D4ED8;
-    --background-secondary-hover-color: #DBEAFE;
+    --blue-50-color: #EFF6FF;
+    --blue-700-color: #1D4ED8;
+    --blue-100-color: #DBEAFE;
 
     --success-color: #16A34A;
     --failure-color: #DC2626;
-    --dark-background-color: #181818;
+    --gray-900-color: #181818;
 
-    --light-gray-color: #F4F4F5;
-    --dark-gray-color: #3F3F46;
-    --green-color: #22C55E;
-    --dark-green-color: #16A34A;
+    --gray-100-color: #F4F4F5;
+    --gray-700-color: #3F3F46;
+    --green-500-color: #22C55E;
+    --green-600-color: #16A34A;
 
     /* Spacing */
     --space-0: 0.25rem;
@@ -180,11 +180,11 @@ body {
 }
 
 .text-gray {
-    color: var(--dark-gray-color) !important;
+    color: var(--gray-700-color) !important;
 }
 
 .text-success {
-    color: var(--green-color) !important;
+    color: var(--green-500-color) !important;
 }
 
 
@@ -223,7 +223,7 @@ body {
 
 .badge {
     position: absolute;
-    background-color: var(--background-primary-color);
+    background-color: var(--blue-600-color);
     border-radius: 100%;
     top: -2px;
     right: -2px;
@@ -244,8 +244,8 @@ body {
 /* Button */
 .link-primary {
     display: inline-block;
-    background-color: var(--background-primary-color);
-    color: var(--text-primary-color);
+    background-color: var(--blue-600-color);
+    color: var(--white-color);
     padding: var(--space-1) var(--space-2);
     text-decoration: none;
     font-size: var(--size-2);
@@ -255,19 +255,19 @@ body {
 
 .link-secondary {
     display: inline-block;
-    background-color: var(--background-secondary-color);
-    color: var(--background-primary-color);
+    background-color: var(--blue-50-color);
+    color: var(--blue-600-color);
     padding: var(--space-1) var(--space-2);
     text-decoration: none;
     font-size: var(--size-2);
-    border: 1px solid var(--background-primary-color);
+    border: 1px solid var(--blue-600-color);
     transition: all 0.25s ease-out;
 }
 
 .btn-primary {
     display: inline-block;
-    background-color: var(--background-primary-color);
-    color: var(--text-primary-color);
+    background-color: var(--blue-600-color);
+    color: var(--white-color);
     padding: var(--space-1) var(--space-2);
     cursor: pointer;
     font-size: var(--size-2);
@@ -280,12 +280,12 @@ body {
 .btn-secondary {
     outline: none;
     display: inline-block;
-    background-color: var(--background-secondary-color);
-    color: var(--background-primary-color);
+    background-color: var(--blue-50-color);
+    color: var(--blue-600-color);
     padding: var(--space-1) var(--space-2);
     cursor: pointer;
     font-size: var(--size-2);
-    border: 1px solid var(--background-primary-color);
+    border: 1px solid var(--blue-600-color);
     transition: all 0.25s ease-out;
 }
 
@@ -294,11 +294,11 @@ body {
     align-items: center;
     justify-content: center;
     padding: var(--space-2);
-    background-color: var(--background-primary-color);
-    color: var(--text-primary-color);
+    background-color: var(--blue-600-color);
+    color: var(--white-color);
     border-radius: 50%;
     outline: none;
-    border: 2px solid var(--background-primary-color);
+    border: 2px solid var(--blue-600-color);
     cursor: pointer;
     font-size: var(--size-5);
     transition: all 0.25s ease-out;
@@ -306,24 +306,24 @@ body {
 
 .btn-primary:hover,
 .link-primary:hover {
-    background-color: var(--background-primary-hover-color);
+    background-color: var(--blue-800-color);
 }
 
 .link-secondary:hover,
 .btn-secondary:hover {
-    background-color: var(--background-secondary-hover-color);
+    background-color: var(--blue-100-color);
 }
 
 .btn-floating-action:hover {
-    box-shadow: 0px 0px 10px 2px var(--background-primary-color);
+    box-shadow: 0px 0px 10px 2px var(--blue-600-color);
 }
 
 
 
 .btn-success-primary {
     display: inline-block;
-    background-color: var(--green-color);
-    color: var(--text-primary-color);
+    background-color: var(--green-500-color);
+    color: var(--white-color);
     padding: var(--space-1) var(--space-2);
     border: 0px;
     cursor: pointer;
@@ -333,7 +333,7 @@ body {
 }
 
 .btn-success-primary:hover {
-    background-color: var(--dark-green-color);
+    background-color: var(--green-600-color);
 }
 
 
@@ -341,7 +341,7 @@ body {
     outline: none;
     display: inline-block;
     background-color: #F0FDF4;
-    color: var(--green-color) !important;
+    color: var(--green-500-color) !important;
     padding: var(--space-1) var(--space-2);
     cursor: pointer;
     font-size: var(--size-2);
@@ -360,7 +360,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--background-primary-color);
+    border: 1px solid var(--blue-600-color);
     border-radius: 0.25rem;
     text-align: center;
 }
@@ -399,11 +399,11 @@ body {
 
 .card>.btn-dismiss {
     position: absolute;
-    background-color: var(--light-gray-color);
+    background-color: var(--gray-100-color);
     border-radius: 50%;
     top: var(--space-2);
     right: var(--space-2);
-    color: var(--text-secondary-color);
+    color: var(--blue-700-color);
     padding: var(--space-0) var(--space-1);
     font-size: var(--size-2);
     font-weight: 700;
@@ -470,7 +470,7 @@ body {
 .form-field>select {
     width: 100%;
     padding: var(--space-1);
-    border: 1px solid var(--background-primary-color);
+    border: 1px solid var(--blue-600-color);
     outline: none;
 }
 
@@ -479,7 +479,7 @@ body {
 .form-field>select:focus {
     width: 100%;
     padding: var(--space-1);
-    box-shadow: 0px 0px 2px 2px var(--background-primary-color);
+    box-shadow: 0px 0px 2px 2px var(--blue-600-color);
     transition: box-shadow 0.2s linear;
 }
 
@@ -547,7 +547,7 @@ textarea:focus::-webkit-input-placeholder {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    border: 1px solid var(--background-primary-color);
+    border: 1px solid var(--blue-600-color);
     text-align: inherit;
 }
 
@@ -563,13 +563,13 @@ textarea:focus::-webkit-input-placeholder {
 .list-group-item-action:hover,
 .list-group-item-action:focus {
     z-index: 1;
-    background-color: var(--background-secondary-color);
+    background-color: var(--blue-50-color);
     cursor: pointer;
 }
 
 .list-item {
     text-decoration: none;
-    border: 1px solid var(--background-primary-color);
+    border: 1px solid var(--blue-600-color);
     padding: var(--space-1) var(--space-1);
 }
 
@@ -580,7 +580,7 @@ textarea:focus::-webkit-input-placeholder {
 .list-item-action:hover,
 .list-item-action:focus {
     z-index: 1;
-    background-color: var(--background-secondary-color);
+    background-color: var(--blue-50-color);
     cursor: pointer;
 }
 
@@ -591,8 +591,8 @@ textarea:focus::-webkit-input-placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--background-primary-color);
-    color: var(--text-primary-color);
+    background-color: var(--blue-600-color);
+    color: var(--white-color);
     padding: var(--space-1) var(--space-2);
     position: relative;
 }
@@ -737,11 +737,11 @@ textarea:focus::-webkit-input-placeholder {
 
 .modal>.btn-dismiss {
     position: absolute;
-    background-color: var(--light-gray-color);
+    background-color: var(--gray-100-color);
     border-radius: 50%;
     top: var(--space-2);
     right: var(--space-2);
-    color: var(--text-secondary-color);
+    color: var(--blue-700-color);
     padding: var(--space-0) var(--space-1);
     font-size: var(--size-2);
     font-weight: 700;
