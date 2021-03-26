@@ -7,7 +7,6 @@ document.querySelectorAll('.needs-validation').forEach(form => {
   
         form.classList.add('was-validated')
     },false);
-
 })
 
 document.querySelector('.navbar .toggle').addEventListener('click',function(event) {
