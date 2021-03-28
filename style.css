@@ -728,6 +728,7 @@
     /* text-align: center; */
     max-width: 300px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card.card-shadow {
@@ -1221,6 +1222,10 @@ textarea:focus::-webkit-input-placeholder {
 
 .flex-gap-1 {
     gap: 1rem;
+}
+
+.flex-gap-2 {
+    gap: 2rem;
 }
 
 .flex .align-self-end {
