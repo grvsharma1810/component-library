@@ -755,8 +755,8 @@
     border-radius: 50%;
     top: 0.5rem;
     right: 0.5rem;
-    width: 1.75rem;
-    height: 1.75rem;
+    min-width: 1.75rem;
+    min-height: 1.75rem;
     color: black;
     font-size: 1rem;
     font-weight: 700;
@@ -822,12 +822,13 @@
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .h-card>.card-img {
-    max-height: 200px;
-    height: 100%;
-    width: auto;
+    max-width: 100px;
+    width: 100%;
+    height: auto;
     display: block;
 }
 
