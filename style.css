@@ -727,12 +727,14 @@
 .card {
     position: relative;
     border: 0px;
+    padding:1rem;
     border-radius: 0.25rem;
-    max-width: 300px;
+    max-width: 250px;
     overflow: hidden;
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .card.card-shadow {
@@ -773,7 +775,7 @@
 
 .card-body {
     flex-grow: 1;
-    padding: 1.25rem;
+    padding-top: 1rem;    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
