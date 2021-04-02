@@ -770,7 +770,8 @@
     display: block;
 }
 
-.v-card .card-body {    
+.v-card .card-body {
+    flex-grow: 1;
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
