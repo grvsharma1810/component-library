@@ -1163,7 +1163,7 @@ textarea:focus::-webkit-input-placeholder {
 
 
 /* Snackbar */
-.toast {
+/* .toast {
     z-index: 999999;
     position: fixed;
     left: 0;
@@ -1190,7 +1190,7 @@ textarea:focus::-webkit-input-placeholder {
 .toast.show {
     visibility: visible;
     opacity: 1;
-}
+} */
 
 /* Container Utility Or Box Utility */
 .box {
