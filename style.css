@@ -763,11 +763,19 @@
 }
 
 .v-card .card-img {
+    flex-grow: 1;
     height: auto;
     border-radius: 0.25rem;
     max-width: 100%;
     width: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
+    position: relative;   
+}
+
+.card-img img{
+    width: 100%;
+    height: auto;
 }
 
 .v-card .card-body {
@@ -789,12 +797,6 @@
     padding: 0.25rem 0.5rem;
     top: 0.5rem;
     left: 0;
-}
-
-
-.card-img-overlay {
-    position: relative;
-    width: 100%;
 }
 
 .bg-overlay {
