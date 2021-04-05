@@ -763,6 +763,7 @@
 }
 
 .v-card .card-img {    
+    flex-grow: 1;
     height: auto;
     border-radius: 0.25rem;    
     width: 100%;
