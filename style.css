@@ -530,9 +530,7 @@
     height: 3rem;
 }
 
-
-/* Badge */
-.badge {
+.avatar-wrapper .badge {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -543,21 +541,35 @@
     color: inherit;
     padding: 0.25rem;
     cursor: pointer;
-    /* font-size: 0.5rem; */
+    font-size: 0.75rem;
 }
 
-.badge.top {
+.avatar-wrapper .badge.top {
     position: absolute;
     top: 0.1rem;
     right: 0.1rem;
 }
 
-.badge.bottom {
+.avatar-wrapper .badge.bottom {
     position: absolute;
     bottom: 0.1rem;
     right: 0.1rem;
 }
 
+
+/* Badge */
+.badge-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0.5rem;
+    min-height: 0.5rem;
+    background-color: inherit;
+    color: inherit;
+    padding: 0.25rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
 
 /* Border Utility */
 .border-1 {
@@ -603,6 +615,7 @@
 
 /* Button */
 .btn-solid {
+    position: relative;
     display: inline-block;
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -642,6 +655,7 @@
 }
 
 .btn-ghost {
+    position: relative;
     display: inline-block;
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -663,6 +677,7 @@
 }
 
 .btn-link {
+    position: relative;
     display: inline-block;
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -696,6 +711,27 @@
     font-size: 1.5rem;
     ;
 }
+
+
+.btn-solid .badge,
+.btn-ghost .badge,
+.btn-link .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    background-color: inherit;
+    border-radius: 100%;
+    color: inherit;
+    padding: 0.15rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
 
 .btn-floating-action {
     display: flex;
