@@ -856,8 +856,7 @@
 }
 
 .h-card>.card-img {
-    max-width: 250px;
-    min-width: 150px;
+    width: 30%;
     height: auto;
     display: flex;
     align-items: center;
