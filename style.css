@@ -781,6 +781,7 @@
 
 .v-card>.btn-dismiss,
 .h-card>.btn-dismiss {
+    z-index: 2;
     position: absolute;
     display: flex;
     justify-content: center;
