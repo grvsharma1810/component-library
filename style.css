@@ -810,10 +810,18 @@
     height: auto;
 }
 
-.v-card .card-body,
-.h-card .card-body {
+.v-card .card-body {
     flex-grow: 1;
     padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: white;
+    color: black;
+}
+
+.h-card .card-body {
+    padding: 0 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -852,12 +860,11 @@
     width: 100%;
     overflow: hidden;
     cursor: pointer;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
 
 .h-card>.card-img {
-    width: 30%;
     height: auto;
     display: flex;
     align-items: center;
