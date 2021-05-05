@@ -1319,7 +1319,7 @@ textarea:focus::-webkit-input-placeholder {
     border-top: 0.15rem solid var(--primary);
     width: 1rem;
     height: 1rem;
-    animation: spin 2s linear infinite;
+    animation: spin 0.75s linear infinite;
 }
 
 .spinner.red {
