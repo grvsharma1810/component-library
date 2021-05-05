@@ -1310,7 +1310,7 @@ textarea:focus::-webkit-input-placeholder {
     border-top: 0.75rem solid var(--primary);
     width: 100px;
     height: 100px;
-    animation: spin 2s linear infinite;
+    animation: spin 0.75s linear infinite;
 }
 
 .small-spinner {
